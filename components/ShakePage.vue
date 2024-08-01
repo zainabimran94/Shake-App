@@ -37,7 +37,7 @@
   
   // Function to navigate back to create page
   const toCreate = () => {
-    router.push('/');
+    router.push('/main');
   };
   
   // Set shake name based on milk flavor

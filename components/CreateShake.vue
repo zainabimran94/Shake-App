@@ -79,7 +79,7 @@ const syrupValue = ref(syrupOptions.value[0][1]);
 const tubuleValue = ref(tubuleOptions.value[0][1]);
 
 const createShake = () => {
-  router.push(`/shake?cream=${creamValue.value}&milk=${milkValue.value}&syrup=${syrupValue.value}&tubule=${tubuleValue.value}`);
+  router.push(`/createshake/shake?cream=${creamValue.value}&milk=${milkValue.value}&syrup=${syrupValue.value}&tubule=${tubuleValue.value}`);
 };
 </script>
 
