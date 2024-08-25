@@ -3,10 +3,7 @@
 const { modelValue, options, placeholder,label } = defineProps({
   modelValue: String,
   options: Array,
-  placeholder: {
-    type: String,
-    default: 'Select an option'
-},
+  
   label: {
     type: String,
     default: ''
@@ -26,11 +23,12 @@ function updateValue(value) {
       @input="updateValue($event.target.value)"
       class="select-menu__dropdown"
     >
-   <option value="">{{ placeholder }}</option>
-  <option v-for="option in options" 
-  :key="option.value" 
-  :value="option.value">
+    
+   <option v-for="option in options" 
+   :key="option.value" 
+   :value="option.value">
       {{ option.label }}
+      
     </option>
   </select>
 

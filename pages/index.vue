@@ -1,5 +1,15 @@
 <template>
-    <div>
-        <h1>This is the home page</h1>
+  
+   <div class="overflow-x-hidden">
+    <HeroPage />
+    <BannerPage />
     </div>
-</template>
+  
+    
+ </template>
+
+ <script setup>
+</script>
+  
+
+  

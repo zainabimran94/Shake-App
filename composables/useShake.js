@@ -2,19 +2,19 @@
 import { ref } from 'vue';
 
 const creamOptions = ref([
-  ["vanilla", "FFF4E8"],
-  ["chocolate", "754820"],
+  ["Vanilla", "FFF4E8"],
+  ["Chocolate", "754820"],
 ]);
 
 const milkOptions = ref([
-  ["chocolate", "C28858"],
-  ["vanilla", "F9F1AD"],
-  ["banana", "FAEB65"],
-  ["strawberry", "EC9FBF"],
-  ["mint", "00A36C"],
-  ["pumpkin", "F48B19"],
-  ["cherry", "BE2666"],
-  ["blackberry", "7B26BE"],
+  ["Chocolate", "C28858"],
+  ["Vanilla", "F9F1AD"],
+  ["Banana", "FAEB65"],
+  ["Strawberry", "EC9FBF"],
+  ["Mint", "00A36C"],
+  ["Pumpkin", "F48B19"],
+  ["Cherry", "BE2666"],
+  ["Blackberry", "7B26BE"],
 ]);
 
 const syrupOptions = ref([

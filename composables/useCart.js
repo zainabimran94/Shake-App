@@ -1,40 +1,52 @@
-// composables/useCart.js
 
 import { ref } from 'vue'
 
-
-export default function useCart() {
+export function useCart() {
   const cart = ref([])
+   
+ const addCart= async (item) => {
+    try{
+      const data = await $fetch('/api/cart/add',{
+       method: 'POST',
+       body: { itemId: item.id, quantity: 1, userId: 2 },
+      });
+    cart.value = data || [] 
+    } catch (e) {
+      console.error(e)
+    }
+  };
 
-  
-  const addItemToCart = (item) => {
-    cart.value.push(item)
-    alert(`Item ${item.name} added to cart`)
-  }
+  const updateCart = async (itemId, quantity) => {
+    try {
+       await $fetch(`/api/cart/update`, {
+        method: 'PATCH',
+        body: { itemId, quantity, userId: 2 },
+        headers: { 'Content-Type': 'application/json' },
+      });
+      await refreshNuxtData ();
+    } catch (e) {
+      console.error(e);
+    }
+  };
 
-
-  const removeItemFromCart = (itemId) => {
-    const itemIndex = cart.value.findIndex(item => item.id === itemId)
-    if (itemIndex !== -1) {
-      const removedItem = cart.value.splice(itemIndex, 1)[0]
-     
-      alert(`Item ${removedItem.name} removed from cart`)
+  const deleteCart = async (itemId, userId) => {
+    try {
+       await $fetch('/api/cart/delete', {
+        method: 'DELETE',
+        body: {  itemId, userId: 2 },
+      }); 
+      await refreshNuxtData ();
+      cart.value = cart.value.filter(item => !(item.itemId === itemId && item.userId === userId));
+      } catch (e) {
+      console.error(e);
     }
   }
+  
 
-  const getCartItems = () => {
-    return cart.value
-  }
-
-  const getCartItemCount = () => {
-    return cart.value.length
-  }
-
-  return {
-    addItemToCart,
-    removeItemFromCart,
-    getCartItems,
-    getCartItemCount
-  }
-}
-
+ return {
+    cart,
+    addCart,
+    updateCart,
+    deleteCart
+  };
+};

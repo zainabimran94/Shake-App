@@ -1,9 +1,5 @@
 <template>
     <div>
-        Your Item has been added!!
+        <CartPages />
     </div>
 </template>
-
-<script setup>
-
-</script>
