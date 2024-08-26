@@ -1,75 +1,115 @@
-# Nuxt 3 Minimal Starter
+# Cafe App
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+A dynamic, responsive web application built with Nuxt 3 Composition API, Nitro, Drizzle ORM, and Neon Console. The app includes a shopping cart feature and a fun milkshake customization game.
 
-## Setup
+Demo: https://cafe-app-tan.vercel.app/
 
-Make sure to install the dependencies:
+## Table of Contents
+- [Introduction](#introduction)
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Feedback](#feedback)
+- [Contributors](#contributors)
+- [Build Process](#build-process)
+- [Acknowledgments](#acknowledgments)
 
-```bash
-# npm
-npm install
+## Introduction
+Cafe App is a responsive and dynamic web application where users can browse through items, add them to a cart, and manage their cart with options to update or delete items. Additionally, users can enjoy a small milkshake game where they can create a customized milkshake from a variety of ingredients.
 
-# pnpm
-pnpm install
+## Features
+- **Responsive Design:** Works seamlessly across devices.
+- **Cart Management:** Add, update, and delete items from the cart, with data fetched from the backend.
+- **Milkshake Game:** Customize your milkshake with a variety of ingredients.
 
-# yarn
-yarn install
+## Installation
+To get started with this project, follow the instructions below:
 
-# bun
-bun install
-```
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/zainabimran94/Shake-App.git
+    cd cafe-app
+    ```
 
-## Development Server
+2. Install the following dependencies:
+    "@neondatabase/serverless": "^0.9.4",
+    "@nuxt/ui": "^2.17.0",
+    "@types/pg": "^8.11.6",
+    "animejs": "^3.2.2",
+    "bcrypt": "^5.1.1",
+    "drizzle-orm": "^0.33.0",
+    "nuxt": "^3.12.4",
+    "nuxt-aos": "^1.2.5",
+    "pg": "^8.12.0",
+    "uuid": "^10.0.0",
+    "vue": "latest"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "drizzle-kit": "^0.24.0",
+    "esbuild": "^0.23.0",
+    "esbuild-register": "^3.6.0",
+    "postcss": "^8.4.41",
+    "tailwindcss": "^3.4.9",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.17.0",
+    "typescript": "^5.5.4"
+  }
 
-Start the development server on `http://localhost:3000`:
+3. Create a `.env` file in the root directory and add the necessary environment variables:
+    ```bash
+    touch .env
+    ```
 
-```bash
-# npm
-npm run dev
+    Example:
+    ```bash
+    DATABASE_URL=your_database_url
+    SECRET_KEY=your_secret_key
+    ```
 
-# pnpm
-pnpm run dev
+4. Start the development server:
+    ```bash
+    npm run dev
+    ```
 
-# yarn
-yarn dev
+## Usage
+- Navigate through the cafe menu and add items to your cart.
+- Manage your cart by updating item quantities or removing items.
+- Enjoy the milkshake customization game.
 
-# bun
-bun run dev
-```
+## Feedback
+We'd love to hear your thoughts and suggestions! Feel free to file an issue or reach out on Twitter.
 
-## Production
+## Contributors
+This project was developed by [Zainab](https://github.com/zainabimran94). Contributions are welcome!
 
-Build the application for production:
+## Build Process
+To build and run the project:
 
-```bash
-# npm
-npm run build
+1. Install dependencies:
+    ```bash
+    npm install
+    ```
 
-# pnpm
-pnpm run build
+2. Start the development server:
+    ```bash
+    npm run dev
+    ```
 
-# yarn
-yarn build
+3. Build the project for production:
+    ```bash
+    npm run build
+    npm run start
+    ```
 
-# bun
-bun run build
-```
+## Acknowledgments
+Special thanks to the contributors of the following packages used in this project:
 
-Locally preview production build:
+- [Nuxt](https://nuxt.com)
+- [Drizzle ORM](https://github.com/drizzle-team/drizzle-orm)
+- [Neon Console](https://neon.tech)
+- [Anime.js](https://animejs.com/)
+- [Tailwind CSS](https://tailwindcss.com/)
 
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+## License
+This project is licensed under the MIT License.
