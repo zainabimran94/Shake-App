@@ -1,6 +1,6 @@
 
 import { integer, pgTable, serial, text, numeric, timestamp} from 'drizzle-orm/pg-core';
-import { relations } from 'drizzle-orm';
+import { varchar } from 'drizzle-orm/pg-core';
 
 
 // Define the `items` table schema
@@ -17,7 +17,7 @@ export const itemsTable = pgTable('items', {
 export const cartTable = pgTable('cart_items', {
   id: serial('id').primaryKey(),
   itemId: integer('item_id').notNull().references(() => itemsTable.id),
-  userId: integer('user_id'),
+  userId: varchar('user_id').notNull(),
   quantity: integer('quantity').notNull(),
 });
 

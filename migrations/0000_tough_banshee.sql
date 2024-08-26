@@ -1,7 +1,7 @@
 CREATE TABLE IF NOT EXISTS "cart_items" (
 	"id" serial PRIMARY KEY NOT NULL,
 	"item_id" integer NOT NULL,
-	"user_id" integer,
+	"user_id" varchar NOT NULL,
 	"quantity" integer NOT NULL
 );
 --> statement-breakpoint
