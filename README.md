@@ -34,17 +34,18 @@ Enjoy a playful mini-game experience that adds fun and engagement to the app.
 
 ## Technology Stack
 ### Frontend:
- 1: Nuxt 3: A Vue 3-based framework for building modern web applications with server-side rendering, static generation, and more.
+1: Nuxt 3: A Vue 3-based framework for building modern web applications with server-side rendering, static generation, 
+  and more.
  2: Composition API: Utilized for writing reusable and modular components.
  3: Tailwind CSS: A utility-first CSS framework for styling the app with ease and flexibility.
  4:  Anime.js: Used for smooth animations within the milkshake game, enhancing user interaction.
 ### Backend:
- 1: Nitro: The server engine of Nuxt 3, enabling fast and optimized server-side rendering and API functionality.
- 2: Drizzle ORM: A type-safe and lightweight ORM for interacting with the app's database.
- 3: Neon Console: Provides a scalable PostgreSQL database for managing user orders and milkshake customizations.
+1: Nitro: The server engine of Nuxt 3, enabling fast and optimized server-side rendering and API functionality.
+2: Drizzle ORM: A type-safe and lightweight ORM for interacting with the app's database.
+3: Neon Console: Provides a scalable PostgreSQL database for managing user orders and milkshake customizations.
 ### Other Tools:
- 1: bcrypt: Used for securely hashing user credentials and managing authentication.
- 2: UUID: For generating unique identifiers for user orders and other backend records.
+1: bcrypt: Used for securely hashing user credentials and managing authentication.
+2: UUID: For generating unique identifiers for user orders and other backend records.
 
 ## Installation
 To set up the project locally, follow these steps:
@@ -52,17 +53,16 @@ To set up the project locally, follow these steps:
 ### Clone the Repository:
 git clone https://github.com/zainabimran94/Shake-App.git
 cd cafe-app
-
-> Install Dependencies: Ensure you have all required dependencies installed for both development and production environments:
-  ### npm install
-> Environment Setup: Create a .env file in the root directory and add the necessary environment variables:
-   ### touch .env
-> Start Development Server: Run the app in development mode:
-  ### npm run dev
+  > Install Dependencies: Ensure you have all required dependencies installed for both development and production 
+  environments:
+      npm install
+  > Environment Setup: Create a .env file in the root directory and add the necessary environment variables:
+      touch .env
+   > Start Development Server: Run the app in development mode:
+      npm run dev
   
 ## Usage
 Once the app is running, you can explore the following features:
-
 1: Cafe Menu: Browse through various items on the cafe's menu and add them to your cart.
 2: Cart Management: Manage your orders by updating item quantities or removing them entirely.
 3: Milkshake Customization Game: Play a fun mini-game where you can create your own custom milkshake by choosing from different ingredients.
