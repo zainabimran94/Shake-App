@@ -61,28 +61,36 @@ To set up the project locally, follow these steps:
 
 ### Clone the Repository:
 git clone https://github.com/zainabimran94/Shake-App.git
-cd cafe-app
-  > Install Dependencies: Ensure you have all required dependencies installed for both development and production 
-  environments:
-      npm install
-  > Environment Setup: Create a .env file in the root directory and add the necessary environment variables:
-      touch .env
-   > Start Development Server: Run the app in development mode:
-      npm run dev
+### cd cafe-app
+
+Install Dependencies: Ensure you have all required dependencies installed for both development and production  environments:
+### npm install
+
+Environment Setup: Create a .env file in the root directory and add the necessary environment variables:
+### touch .env
+
+Start Development Server: Run the app in development mode:
+### npm run dev
   
 ## Usage
 Once the app is running, you can explore the following features:
 1: Cafe Menu: Browse through various items on the cafe's menu and add them to your cart.
+
 2: Cart Management: Manage your orders by updating item quantities or removing them entirely.
+
 3: Milkshake Customization Game: Play a fun mini-game where you can create your own custom milkshake by choosing from different ingredients.
 
 ## Acknowledgments
 Special thanks to the following technologies and packages used to build this project:
 
 Nuxt 3: The foundation of this modern web app.
+
 Drizzle ORM: For seamless database interactions.
+
 Neon Console: Scalable database management.
+
 Anime.js: For providing delightful animations.
+
 Tailwind CSS: For rapid and responsive design.
 ## License
 This project is licensed under the MIT License. See the LICENSE file for more details.
