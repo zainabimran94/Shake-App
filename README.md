@@ -34,17 +34,17 @@ Enjoy a playful mini-game experience that adds fun and engagement to the app.
 
 ## Technology Stack
 ### Frontend:
- > Nuxt 3: A Vue 3-based framework for building modern web applications with server-side rendering, static generation, and more.
- > Composition API: Utilized for writing reusable and modular components.
- > Tailwind CSS: A utility-first CSS framework for styling the app with ease and flexibility.
- > Anime.js: Used for smooth animations within the milkshake game, enhancing user interaction.
+ 1: Nuxt 3: A Vue 3-based framework for building modern web applications with server-side rendering, static generation, and more.
+ 2: Composition API: Utilized for writing reusable and modular components.
+ 3: Tailwind CSS: A utility-first CSS framework for styling the app with ease and flexibility.
+ 4:  Anime.js: Used for smooth animations within the milkshake game, enhancing user interaction.
 ### Backend:
- > Nitro: The server engine of Nuxt 3, enabling fast and optimized server-side rendering and API functionality.
- > Drizzle ORM: A type-safe and lightweight ORM for interacting with the app's database.
- > Neon Console: Provides a scalable PostgreSQL database for managing user orders and milkshake customizations.
+ 1: Nitro: The server engine of Nuxt 3, enabling fast and optimized server-side rendering and API functionality.
+ 2: Drizzle ORM: A type-safe and lightweight ORM for interacting with the app's database.
+ 3: Neon Console: Provides a scalable PostgreSQL database for managing user orders and milkshake customizations.
 ### Other Tools:
- > bcrypt: Used for securely hashing user credentials and managing authentication.
- > UUID: For generating unique identifiers for user orders and other backend records.
+ 1: bcrypt: Used for securely hashing user credentials and managing authentication.
+ 2: UUID: For generating unique identifiers for user orders and other backend records.
 
 ## Installation
 To set up the project locally, follow these steps:
